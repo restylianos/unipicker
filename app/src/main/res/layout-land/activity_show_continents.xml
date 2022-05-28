@@ -8,8 +8,8 @@
 
     <LinearLayout
         android:id="@+id/continents_container"
-        android:layout_width="232dp"
-        android:layout_height="443dp"
+        android:layout_width="227dp"
+        android:layout_height="259dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

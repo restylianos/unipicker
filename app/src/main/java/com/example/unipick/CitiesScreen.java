@@ -3,6 +3,7 @@ package com.example.unipick;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
@@ -14,6 +15,7 @@ public class CitiesScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cities_screen);
+
         Button exitButton = findViewById(R.id.back_btn);
         exitButton.setOnClickListener(v -> {
             finish();

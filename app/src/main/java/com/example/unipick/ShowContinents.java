@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
@@ -22,7 +23,6 @@ public class ShowContinents extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_continents);
-
         LinearLayout layout = (LinearLayout) findViewById(R.id.continents_container);
         for(int i=0;i<continents.length;i++){
             Button c = new Button(this);

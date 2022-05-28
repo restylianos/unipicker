@@ -4,12 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".ShowContinents">
+    tools:context=".CitiesScreen">
+
 
     <LinearLayout
-        android:id="@+id/continents_container"
-        android:layout_width="232dp"
-        android:layout_height="443dp"
+        android:id="@+id/cities_container"
+        android:layout_width="220dp"
+        android:layout_height="264dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,7 +26,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/continents_container" />
-
-
+        app:layout_constraintTop_toBottomOf="@+id/cities_container" />
 </androidx.constraintlayout.widget.ConstraintLayout>
