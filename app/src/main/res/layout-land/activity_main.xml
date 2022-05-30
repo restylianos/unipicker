@@ -18,61 +18,35 @@
         android:id="@+id/search_country_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:bottomLeftRadius="10dp"
-        android:bottomRightRadius="10dp"
         android:onClick="showContinentsScreen"
         android:text="Search County"
-        android:topLeftRadius="10dp"
-        android:topRightRadius="10dp"
+
         app:backgroundTint="@android:color/holo_green_dark"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imageView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.796" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/exit_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:bottomLeftRadius="10dp"
-        android:bottomRightRadius="10dp"
         android:text="Exit"
-        android:topLeftRadius="10dp"
-        android:topRightRadius="10dp"
         app:backgroundTint="@android:color/holo_red_dark"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_country_btn"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        app:layout_constraintVertical_bias="0.607" />
-
-    <RelativeLayout
-        android:layout_width="306dp"
-        android:layout_height="283dp"
-        app:layout_constraintBottom_toTopOf="@+id/search_country_btn"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250sp"
+        android:layout_height="250sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.761">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="296dp"
-            android:layout_height="273dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="12dp"
-            android:layout_marginBottom="-1dp"
-            android:adjustViewBounds="true"
-            android:maxWidth="512px"
-            android:maxHeight="512px"
-            android:minWidth="512px"
-            android:minHeight="512px"
-            app:srcCompat="@drawable/planet" />
-    </RelativeLayout>
+        app:srcCompat="@drawable/planet" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
